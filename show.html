@@ -1,0 +1,390 @@
+<html>
+    <head>
+        <style type="text/css">
+            .box > div{
+                height:20px;
+                width:100;
+                position:absolute;
+				left: 10px;
+				top: 100px;
+            }
+            body{
+                background-color:red;
+                font-size:30px;
+                color:red;
+                padding:100px;
+            }
+            @keyframes changebox1 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(90deg) translate(-50px,-50px);
+background-color:#000;
+                }
+            }
+			@keyframes changebox11 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(90deg) translate(-50px,-50px);
+background-color:#fff;
+                }
+            } 
+            @keyframes changebox2 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(90deg) translate(50px,-50px);
+background-color:#000;
+                }
+            }
+			@keyframes changebox22 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(90deg) translate(50px,-50px);
+background-color:#fff;
+                }
+            }
+            @keyframes changebox3 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(0deg) translate(0px,100px);
+background-color:#000;
+                }
+            }
+			@keyframes changebox33 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(0deg) translate(0px,100px);
+background-color:#fff;
+                }
+            }
+            @keyframes changebox4 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(90deg) translate(50px,50px);
+background-color:#000;
+                }
+            }
+			@keyframes changebox44 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(90deg) translate(50px,50px);
+background-color:#fff;
+                }
+            }
+            @keyframes changebox5 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(90deg) translate(-50px,50px);
+background-color:#000;
+                }
+            }
+			@keyframes changebox55 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(90deg) translate(-50px,50px);
+background-color:#fff;
+                }
+            }
+            @keyframes changebox6 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(0deg) translate(0px,0px);
+background-color:#000;
+                }
+            }
+			@keyframes changebox66 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(0deg) translate(0px,0px);
+background-color:#fff;
+                }
+            }
+            @keyframes changebox0 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(0deg) translate(0px,-100px);
+background-color:#000;
+                }
+            }
+
+			 @keyframes changebox00 {
+            10% {  }
+            50% {  }
+            70% {  }
+            100% {
+                transform:rotate(0deg) translate(0px,-100px);
+				background-color:#fff;
+                }
+            }
+			
+			.code-box{
+				border: solid thin #fff;
+				width: 640px;
+				overflow: hidden;	
+			}
+			.box{				
+				position: relative;
+				width: 120px;
+				height: 220px;
+				margin-right: 10px;
+				float: left;
+			}
+            .code-box:hover .node1{
+                 animation: changebox1 2s ease-in-out infinite alternate;
+            }
+            .code-box:hover .node2{
+                animation: changebox2 2s ease-in-out infinite alternate;
+            }
+            .code-box:hover .node3{
+                animation: changebox3 2s ease-in-out infinite alternate;
+            }
+            .code-box:hover .node4{
+                animation: changebox4 2s ease-in-out infinite alternate;
+            }
+            .code-box:hover .node5{
+                animation: changebox5 2s ease-in-out infinite alternate;
+            }
+            .code-box:hover .node6{
+                animation: changebox6 2s ease-in-out infinite alternate;
+            }
+            .code-box:hover .node0{
+                animation: changebox0 2s ease-in-out infinite alternate;
+            }
+			.box.last-box{
+				margin-right:unset;
+			}
+			/*1*/
+			.code-box:hover .box.number1 .node1{
+				animation: changebox11 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number1 .node2{
+				animation: changebox22 2s ease-in-out infinite alternate;
+			}
+			/*2*/
+			.code-box:hover .box.number2 .node1{
+				animation: changebox00 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number2 .node1{
+				animation: changebox11 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number2 .node2{
+				animation: changebox33 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number2 .node2{
+				animation: changebox44 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number2 .node2{
+				animation: changebox66 2s ease-in-out infinite alternate;
+			}
+			/*3*/
+			.code-box:hover .box.number3 .node0{
+				animation: changebox00 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number3 .node1{
+				animation: changebox11 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number3 .node2{
+				animation: changebox22 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number3 .node3{
+				animation: changebox33 2s ease-in-out infinite alternate;
+			}			
+			.code-box:hover .box.number3 .node6{
+				animation: changebox66 2s ease-in-out infinite alternate;
+			}
+			/*4*/
+			.code-box:hover .box.number4 .node1{
+				animation: changebox11 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number4 .node2{
+				animation: changebox22 2s ease-in-out infinite alternate;
+			}	
+			.code-box:hover .box.number4 .node5{
+				animation: changebox55 2s ease-in-out infinite alternate;
+			}			
+			.code-box:hover .box.number4 .node6{
+				animation: changebox66 2s ease-in-out infinite alternate;
+			}
+			/*5*/
+			.code-box:hover .box.number5 .node0{
+				animation: changebox00 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number5 .node2{
+				animation: changebox22 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number5 .node3{
+				animation: changebox33 2s ease-in-out infinite alternate;
+			}			
+			.code-box:hover .box.number5 .node5{
+				animation: changebox55 2s ease-in-out infinite alternate;
+			}			
+			.code-box:hover .box.number5 .node6{
+				animation: changebox66 2s ease-in-out infinite alternate;
+			}
+			/*6*/
+			.code-box:hover .box.number6 .node0{
+				animation: changebox00 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number6 .node2{
+				animation: changebox22 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number6 .node6{
+				animation: changebox33 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number6 .node4{
+				animation: changebox44 2s ease-in-out infinite alternate;
+			}			
+			.code-box:hover .box.number6 .node5{
+				animation: changebox55 2s ease-in-out infinite alternate;
+			}			
+			.code-box:hover .box.number6 .node6{
+				animation: changebox66 2s ease-in-out infinite alternate;
+			}
+			/*7*/
+			.code-box:hover .box.number7 .node0{
+				animation: changebox00 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number7 .node1{
+				animation: changebox11 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number7 .node2{
+				animation: changebox22 2s ease-in-out infinite alternate;
+			}
+			/*8*/
+			.code-box:hover .box.number8 .node0{
+				animation: changebox00 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number8 .node1{
+				animation: changebox11 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number8 .node2{
+				animation: changebox22 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number8 .node3{
+				animation: changebox33 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number8 .node4{
+				animation: changebox44 2s ease-in-out infinite alternate;
+			}			
+			.code-box:hover .box.number8 .node5{
+				animation: changebox55 2s ease-in-out infinite alternate;
+			}			
+			.code-box:hover .box.number8 .node6{
+				animation: changebox66 2s ease-in-out infinite alternate;
+			}
+			/*9*/
+			.code-box:hover .box.number9 .node0{
+				animation: changebox00 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number9 .node1{
+				animation: changebox11 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number9 .node2{
+				animation: changebox22 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number9 .node3{
+				animation: changebox33 2s ease-in-out infinite alternate;
+			}		
+			.code-box:hover .box.number9 .node5{
+				animation: changebox55 2s ease-in-out infinite alternate;
+			}			
+			.code-box:hover .box.number9 .node6{
+				animation: changebox66 2s ease-in-out infinite alternate;
+			}
+			/*0*/
+			.code-box:hover .box.number0 .node0{
+				animation: changebox00 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number0 .node1{
+				animation: changebox11 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number0 .node2{
+				animation: changebox22 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number0 .node3{
+				animation: changebox33 2s ease-in-out infinite alternate;
+			}		
+			.code-box:hover .box.number0 .node4{
+				animation: changebox44 2s ease-in-out infinite alternate;
+			}
+			.code-box:hover .box.number0 .node5{
+				animation: changebox55 2s ease-in-out infinite alternate;
+			}			
+        </style>
+    </head>
+<body>
+test1
+<div class="code-box">
+	<div class="box number1">
+		<div class="node1"></div>
+		<div class="node2"></div>
+		<div class="node3"></div>
+		<div class="node4"></div>
+		<div class="node5"></div>
+		<div class="node6"></div>
+		<div class="node0"></div>
+	</div>
+	<div class="box number3">
+		<div class="node1"></div>
+		<div class="node2"></div>
+		<div class="node3"></div>
+		<div class="node4"></div>
+		<div class="node5"></div>
+		<div class="node6"></div>
+		<div class="node0"></div>
+	</div>
+	<div class="box number5">
+		<div class="node1"></div>
+		<div class="node2"></div>
+		<div class="node3"></div>
+		<div class="node4"></div>
+		<div class="node5"></div>
+		<div class="node6"></div>
+		<div class="node0"></div>
+	</div>
+	<div class="box number7">
+		<div class="node1"></div>
+		<div class="node2"></div>
+		<div class="node3"></div>
+		<div class="node4"></div>
+		<div class="node5"></div>
+		<div class="node6"></div>
+		<div class="node0"></div>
+	</div>
+	<div class="box last-box number9">
+		<div class="node1"></div>
+		<div class="node2"></div>
+		<div class="node3"></div>
+		<div class="node4"></div>
+		<div class="node5"></div>
+		<div class="node6"></div>
+		<div class="node0"></div>
+	</div>
+</div>
+</body>
+</html>
